@@ -1,5 +1,7 @@
 # Install [Freebsd]
 ``` bash
+$ sed -i -e 's/enabled: no/enabled: yes/' /usr/local/etc/pkg/repos/FreeBSD.conf
+$ sed -i -e 's/enabled: yes/enabled: no/' /usr/local/etc/pkg/repos/local.conf
 $ pkg install cups nano gutenprint wget
 ```
 
